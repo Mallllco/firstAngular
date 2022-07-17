@@ -1,0 +1,5 @@
+app-quote {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+}
