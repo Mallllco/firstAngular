@@ -1,8 +1,15 @@
 import { Injectable } from '@angular/core';
 import { UsersComponent } from './users/users.component';
 
+export type User = {
+  name: string;
+  lastname: string;
+  address: string;
+  email: string;
+};
+
 @Injectable({
-  providedIn: UsersComponent,
+  providedIn: 'root',
 })
 export class UsersService {
   getUsers() {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from '../users.service';
+import { User, UsersService } from '../users.service';
 
 @Component({
   selector: 'app-users',
@@ -8,7 +8,7 @@ import { UsersService } from '../users.service';
 })
 export class UsersComponent implements OnInit {
   userTableHeader = 'User Managed';
-  users = [];
+  users: User[] = [];
 
   constructor() {
     const userService = new UsersService();
